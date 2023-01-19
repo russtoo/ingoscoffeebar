@@ -1,10 +1,3 @@
-/**
-* Template Name: Delicious - v4.10.0
-* Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -15,11 +8,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #ffb03b;
+  color: #000000;
 }
 
 a:hover {
-  color: #ffc56e;
+  color: #444444;
   text-decoration: none;
 }
 
@@ -42,7 +35,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ffb03b;
+  background: #000000;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -87,7 +80,7 @@ h6 {
 }
 
 #topbar i {
-  color: #ffb03b;
+  color: #000000;
   line-height: 0;
 }
 
@@ -142,7 +135,7 @@ h6 {
 # Book a table button Menu
 --------------------------------------------------------------*/
 .book-a-table-btn {
-  background: #ffb03b;
+  background: #000000;
   color: #fff;
   border-radius: 50px;
   margin: 0 0 0 20px;
@@ -155,7 +148,7 @@ h6 {
 }
 
 .book-a-table-btn:hover {
-  background: #ffa012;
+  background: #000000;
   color: #fff;
 }
 
@@ -213,7 +206,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #ffb03b;
+  color: #000000;
 }
 
 .navbar .dropdown ul {
@@ -250,7 +243,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #ffb03b;
+  color: #000000;
 }
 
 .navbar .dropdown:hover>ul {
@@ -346,7 +339,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #ffb03b;
+  color: #000000;
 }
 
 .navbar-mobile .getstarted,
@@ -381,7 +374,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #ffb03b;
+  color: #000000;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -440,7 +433,7 @@ h6 {
 }
 
 #hero h2 span {
-  color: #ffb03b;
+  color: #000000;
 }
 
 #hero p {
@@ -520,12 +513,12 @@ h6 {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   color: #fff;
-  border: 2px solid #ffb03b;
+  border: 2px solid #000000;
 }
 
 #hero .btn-menu:hover,
 #hero .btn-book:hover {
-  background: #ffb03b;
+  background: #000000;
   color: #fff;
 }
 
@@ -570,7 +563,7 @@ section {
 }
 
 .section-title h2 span {
-  color: #ffb03b;
+  color: #000000;
 }
 
 .section-title p {
@@ -690,7 +683,7 @@ section {
 
 .about .content ul i {
   font-size: 20px;
-  color: #ffb03b;
+  color: #000000;
   position: absolute;
   left: 0;
   top: 2px;
@@ -711,7 +704,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#ffb03b 50%, rgba(255, 176, 59, 0.4) 52%);
+  background: radial-gradient(#000000 50%, rgba(255, 176, 59, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -752,14 +745,14 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(255, 176, 59, 0.7);
+  border: 5px solid rgba(255, 0, 0, 0.829);
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
 }
 
 .about .play-btn:hover::after {
-  border-left: 15px solid #ffb03b;
+  border-left: 15px solid #000000;
   transform: scale(20);
 }
 
@@ -857,7 +850,7 @@ section {
 }
 
 .why-us .box:hover {
-  background: #ffb03b;
+  background: #000000;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
@@ -890,14 +883,14 @@ section {
   margin: 0 3px 10px 3px;
   transition: all ease-in-out 0.3s;
   background: #fff;
-  border: 2px solid #ffb03b;
+  border: 2px solid #000000;
   border-radius: 50px;
 }
 
 .menu #menu-flters li:hover,
 .menu #menu-flters li.filter-active {
   color: #fff;
-  background: #ffb03b;
+  background: #000000;
 }
 
 .menu #menu-flters li:last-child {
@@ -929,7 +922,7 @@ section {
   position: relative;
   z-index: 3;
   font-weight: 700;
-  color: #ff9b08;
+  color: #000000;
 }
 
 .menu .menu-content span {
@@ -970,12 +963,12 @@ section {
 }
 
 .specials .nav-link:hover {
-  color: #ffb03b;
+  color: #000000;
 }
 
 .specials .nav-link.active {
-  color: #ffb03b;
-  border-color: #ffb03b;
+  color: #000000;
+  border-color: #000000;
 }
 
 .specials .tab-pane.active {
@@ -1006,7 +999,7 @@ section {
 
   .specials .nav-link.active {
     color: #fff;
-    background: #ffb03b;
+    background: #000000;
   }
 }
 
@@ -1055,7 +1048,7 @@ section {
 .events .event-item h3 {
   font-weight: 600;
   font-size: 26px;
-  color: #ffb03b;
+  color: #000000;
 }
 
 .events .event-item .price {
@@ -1066,7 +1059,7 @@ section {
 }
 
 .events .event-item .price span {
-  border-bottom: 2px solid #ffb03b;
+  border-bottom: 2px solid #000000;
 }
 
 .events .event-item ul {
@@ -1081,7 +1074,7 @@ section {
 .events .event-item ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #ffb03b;
+  color: #000000;
 }
 
 .events .event-item p:last-child {
@@ -1101,7 +1094,7 @@ section {
 }
 
 .events .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffb03b;
+  background-color: #000000;
 }
 
 /*--------------------------------------------------------------
@@ -1184,7 +1177,7 @@ section {
 }
 
 .book-a-table .php-email-form button[type=submit] {
-  background: #ffb03b;
+  background: #000000;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1193,7 +1186,7 @@ section {
 }
 
 .book-a-table .php-email-form button[type=submit]:hover {
-  background: #ffa012;
+  background: #000000;
 }
 
 /*--------------------------------------------------------------
@@ -1282,7 +1275,7 @@ section {
   display: block;
   width: 50px;
   height: 1px;
-  background: #ffcf88;
+  background: #444444;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -1303,7 +1296,7 @@ section {
 }
 
 .chefs .member .social a:hover {
-  color: #ffb03b;
+  color: #000000;
 }
 
 .chefs .member .social i {
@@ -1381,7 +1374,7 @@ section {
 }
 
 .testimonials .testimonial-item .stars {
-  color: #ffb03b;
+  color: #000000;
   margin-bottom: 10px;
 }
 
@@ -1423,7 +1416,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffb03b;
+  background-color: #000000;
 }
 
 @media (min-width: 992px) {
@@ -1446,7 +1439,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #ffb03b;
+  color: #000000;
   float: left;
   width: 44px;
   height: 44px;
@@ -1475,7 +1468,7 @@ section {
 }
 
 .contact .info:hover i {
-  background: #ffb03b;
+  background: #000000;
   color: #fff;
 }
 
@@ -1544,7 +1537,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #ffb03b;
+  background: #000000;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1553,7 +1546,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ffa012;
+  background: #000000;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1590,7 +1583,7 @@ section {
 #footer h3 {
   font-size: 36px;
   font-weight: 700;
-  color: #ffb03b;
+  color: #000000;
   position: relative;
   padding: 0;
   margin: 0 0 15px 0;
@@ -1623,7 +1616,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #ffb03b;
+  background: #000000;
 }
 
 #footer .copyright {
