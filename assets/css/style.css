@@ -49,7 +49,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #ffc064;
+  background: #444444;
   color: #fff;
 }
 
@@ -80,7 +80,7 @@ h6 {
 }
 
 #topbar i {
-  color: #000000;
+  color: #ffffff;
   line-height: 0;
 }
 
@@ -831,7 +831,7 @@ section {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: #ffcf88;
+  color: #444444;
 }
 
 .why-us .box h4 {
