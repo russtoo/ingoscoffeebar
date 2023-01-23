@@ -2,7 +2,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", serif;
   color: #444444;
 }
 
@@ -22,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Satisfy", sans-serif;
+  font-family: "Bitter", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -1583,7 +1583,7 @@ section {
 #footer h3 {
   font-size: 36px;
   font-weight: 700;
-  color: #000000;
+  color: #fff;
   position: relative;
   padding: 0;
   margin: 0 0 15px 0;
@@ -1625,4 +1625,9 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+
+#footer .credits a {
+  color: #8ab4f8;
+  text-decoration: underline;
 }
