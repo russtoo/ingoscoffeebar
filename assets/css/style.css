@@ -1190,6 +1190,45 @@ section {
   background: #000000;
 }
 
+/* the below Section styles for under development feature */
+
+.development-feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+
+.development-feature-text {
+  text-align: center;
+  padding: 0 20px;
+  margin: 40px 0;
+}
+
+.development-feature-text h2 {
+  margin-bottom: 10px;
+}
+
+.development-feature-spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.development-feature-spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #000000;
+  border-radius: 50%;
+  animation: spinner 0.8s linear infinite;
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
