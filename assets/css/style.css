@@ -1476,7 +1476,7 @@ section {
   margin-top: -40px;
 }
 
-.info-wrap a:hover {
+.info-wrap a {
   cursor: pointer;
   color: #0e6aff;
   text-decoration: underline;
