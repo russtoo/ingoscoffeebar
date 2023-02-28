@@ -1329,7 +1329,7 @@ section {
 }
 
 .chefs .member .social {
-  margin-top: 15px;
+  margin-top: 0;
 }
 
 .chefs .member .social a {
@@ -1411,7 +1411,7 @@ section {
 .testimonials .testimonial-item h4 {
   font-size: 14px;
   color: #ddd;
-  margin: 0 0 15px 0;
+  margin: 0 0 7px 0;
   font-family: "Comic Neue", sans-serif;
 }
 
@@ -1478,7 +1478,12 @@ section {
 
 .info-wrap a {
   cursor: pointer;
-  color: #0e6aff;
+  color: #0062ff;
+}
+
+.info-wrap a:hover {
+  cursor: pointer;
+  color: #0062ff;
   text-decoration: underline;
 }
 
