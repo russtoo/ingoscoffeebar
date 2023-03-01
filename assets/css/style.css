@@ -1034,6 +1034,17 @@ section {
   }
 }
 
+.make-an-order a {
+  cursor: pointer;
+  color: #0062ff;
+}
+
+.make-an-order a:hover {
+  cursor: pointer;
+  color: #0062ff;
+  text-decoration: underline;
+}
+
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
