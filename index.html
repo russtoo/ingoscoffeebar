@@ -45,7 +45,7 @@
     <!-- ======= Top Bar ======= -->
     <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
       <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
-        <i class="bi bi-arrow-up ms-4 d-flex align-items-center"><span>Swipe to accept <a href="" style="color: white; text-decoration: underline;">cookies</a>.</span></i>
+        <i id="cookie-popup" class="bi bi-arrow-up ms-4 d-flex align-items-center"><span>Swipe Up<a href="" style="color: white; text-decoration: underline;"></a></span></i>
       </div> <!--"bi bi-clock d-flex align-items-center"-->
     </section>
 
@@ -1038,6 +1038,7 @@
         loader.remove();
       });
     </script>
+
     <script>
       // Get all the HTML elements with the class name "coming-soon"
       const comingSoonElements = document.getElementsByClassName("coming-soon");
@@ -1049,7 +1050,6 @@
           this.innerText = "Coming soon";
         });
       }
-
     </script>
 
     <!-- Main JS File -->
