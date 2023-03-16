@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Code</title>
+    <link rel="stylesheet" href="sample.css">
+  </head>
+
+  <body>
+    <div class="loading">
+      <svg class="loading__icon" viewBox="0 0 50 50">
+        <img src="path/to/your/svg/file.svg" alt="My SVG">  
+      </svg>
+    </div>
+    
+    <script>
+      // Add 'loaded' class to the body after 3 seconds to hide the loading page
+      setTimeout(function() {
+        document.body.classList.add('loaded');
+      }, 3000);
+    </script>
+  </body>
+</html>
