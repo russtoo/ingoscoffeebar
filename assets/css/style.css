@@ -200,8 +200,7 @@ h6 {
 .navbar .active:focus,
 .navbar li:hover>a {
   color: #ffffff;
-  text-decoration: underline rgb(255, 255, 255) 2px;
-  text-underline-offset: 4px;
+  font-weight: 700;
 }
 
 .navbar .dropdown ul {
