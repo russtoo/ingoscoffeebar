@@ -1671,6 +1671,8 @@ section {
   position: relative;
   padding: 0;
   margin: 0 0 15px 0;
+  width: 70px;
+  height: auto;
 }
 
 #footer p {
