@@ -30,7 +30,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <style>
       #header {
-        top: 30px;
+        top: 10px;
         height: 70px;
         z-index: 997;
         transition: all 0.5s;
@@ -45,6 +45,27 @@
       #header.header-scrolled {
         top: 0;
         background: rgba(26, 24, 22, 0.85);
+      }
+
+      #header.header-transparent .logo img {
+        padding: 0;
+        margin: 0;
+        max-height: 51px;
+        transition: all 0.5s;
+      }
+      
+      #header.header-scrolled .logo img{
+        padding: 0;
+        margin: 0;
+        max-height: 41px;
+      }
+
+      #sandwich.sandwich-transparent {
+        opacity: 0;
+      }
+
+      #sandwich.sandwich-scrolled {
+        opacity: 1;
       }
     </style>
   </head>
@@ -62,19 +83,22 @@
     </div>
 
     <!-- ======= Top Bar ======= -->
-    <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+    <!-- <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
       <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
         <i id="cookie-popup" class="bi bi-arrow-up ms-4 d-flex align-items-center" style="font-size: 13px;" ><span>Swipe Up<a href="" style="color: white; text-decoration: underline;"></a></span></i>
-      </div> <!--"bi bi-clock d-flex align-items-center"-->
-    </section>
+      </div>  "bi bi-clock d-flex align-items-center"
+    </section> -->
 
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center header-transparent">
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-        <div class="logo me-auto">
-          <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        
+        <div id="ingo" class="ingo-transparent">
+          <div class="logo me-auto">
+            <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+          </div>
         </div>
+        
 
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
@@ -87,7 +111,10 @@
             <li><a class="nav-link scrollto" href="gallery.html">Gallery</a></li>
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
+          <div id="sandwich" class="sandwich-transparent">
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </div>
+          
         </nav><!-- .navbar -->
         <!--
         <a href="#book-a-table" class="book-a-table-btn scrollto"><i class="bi bi-cart-fill"> 0</i></a>
@@ -115,15 +142,18 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> 
 
             <!-- Slide 2 -->
             <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
               <div class="carousel-container">
                 <div class="carousel-content">
-                  <p class="animate__animated animate__fadeInDown">GO dried FRUIT <br>Raw Honey <br>Indoor Plants <br>Darling Olives Products <br>Macadamia Oil & Butter</p>
+                  <p class="animate__animated animate__fadeInDown">Looking for a gift, a treat, 
+                    or on a way to brighten up your home or office?
+                    Our shelf has something to suit your taste and budget.
+                  </p>
                   <div>
-                    <a href="#specials" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Shelf</a>
+                    <a href="#specials" class="btn-menu animate__animated animate__fadeInUp scrollto">Shelf Goods</a>
                   </div>
                 </div>
               </div>

@@ -119,7 +119,7 @@ h6 {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 41px;
 }
 /*--------------------------------------------------------------
 # Book a table button Menu
@@ -280,6 +280,8 @@ h6 {
   line-height: 0;
   transition: 0.5s;
 }
+
+
 
 @media (max-width: 991px) {
   .mobile-nav-toggle {
