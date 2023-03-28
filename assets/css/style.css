@@ -436,7 +436,7 @@ h6 {
   width: 80%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 40px auto;
   color: #fff;
 }
 
@@ -650,6 +650,7 @@ section {
   font-weight: 400;
   font-size: 34px;
   color: #5f5950;
+  padding-bottom: 14px;
 }
 
 .about .content h4 {
