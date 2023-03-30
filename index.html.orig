@@ -85,9 +85,15 @@
     <!-- ======= Top Bar ======= -->
     <!-- <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
       <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+<<<<<<< HEAD
+        <i class="bi bi-arrow-up ms-4 d-flex align-items-center"><span>Swipe Up<a href="" style="color: white; text-decoration: underline;"></a></span></i>
+      </div> <!--"bi bi-clock d-flex align-items-center"-->
+    </section>
+=======
         <i id="cookie-popup" class="bi bi-arrow-up ms-4 d-flex align-items-center" style="font-size: 13px;" ><span>Swipe Up<a href="" style="color: white; text-decoration: underline;"></a></span></i>
       </div>  "bi bi-clock d-flex align-items-center"
     </section> -->
+>>>>>>> loading
 
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center header-transparent">
@@ -442,7 +448,7 @@
     </footer><!-- End Footer -->
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-    
+    <a href="#about" class="scroll-down d-flex align-items-center justify-content-center">scroll down<i class="bi bi-arrow-down-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
