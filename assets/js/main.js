@@ -75,7 +75,6 @@
   let selectHeader = select('#header')
   let selectTopbar = select('#topbar')
   let selectSandwich = select('#sandwich')
-  let selectIngo = select('#ingo')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
@@ -102,6 +101,7 @@
    * Back to top button
    */
   let backtotop = select('.back-to-top')
+  let scrolldown = select('.scroll-down')
   if (backtotop) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {
@@ -112,7 +112,20 @@
     }
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
+  } 
+  if (scrolldown) {
+    const toggleScrolldown = () => {
+      if (window.scrollY < 100) {
+        scrolldown.classList.add('active')
+      } else {
+        scrolldown.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleScrolldown)
+    onscroll(document, toggleScrolldown)
   }
+  
+
 
   /**
    * Mobile nav toggle

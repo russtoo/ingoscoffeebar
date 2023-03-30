@@ -73,16 +73,13 @@
   <body>
 
     <!-- ======= loader ======= -->
-    <div class="loader d-flex flex-column">
-      <div class="loader-bars d-flex">
-        <div class="loader-bar"></div>
-        <div class="loader-bar"></div>
-        <div class="loader-bar"></div>
-        <div class="loader-bar"></div>
-        <div class="loader-bar"></div>
-        <div class="loader-bar"></div>
-      </div>
-      <p style="color: white; margin-top: 70px; font-size: small;">COMING SOON</p>
+    <div class="loader">
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
     </div>
 
     <!-- ======= Top Bar ======= -->
@@ -192,7 +189,7 @@
     <main id="main">
 
       <!-- ======= About Section ======= -->
-      <section id="about" class="about" style="padding-top: 20px; padding-bottom: -20px;">
+      <section id="about" class="about" style="padding-top: 60px;">
         <div class="container-fluid">
           <div class="row">
             
@@ -445,6 +442,7 @@
     </footer><!-- End Footer -->
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#about" class="scroll-down d-flex align-items-center justify-content-center">scroll down<i class="bi bi-arrow-down-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -456,20 +454,8 @@
     <script>
       window.addEventListener('load', function() {
         const loader = document.querySelector('.loader');
+        loader.remove();
       });
-    </script>
-
-    <script>
-      // Get all the HTML elements with the class name "coming-soon"
-      const comingSoonElements = document.getElementsByClassName("coming-soon");
-
-      // Add a click event listener to all the elements with the class name "coming-soon"
-      for (let i = 0; i < comingSoonElements.length; i++) {
-        comingSoonElements[i].addEventListener("click", function() {
-          // Change the text of the clicked element to "Coming soon"
-          this.innerText = "Coming soon";
-        });
-      }
     </script>
 
     <!-- Main JS File -->
