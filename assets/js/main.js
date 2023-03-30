@@ -74,17 +74,22 @@
    */
   let selectHeader = select('#header')
   let selectTopbar = select('#topbar')
+  let selectSandwich = select('#sandwich')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled')
         if (selectTopbar) {
           selectTopbar.classList.add('topbar-scrolled')
+        } if (selectSandwich) {
+          selectSandwich.classList.add('sandwich-scrolled')
         }
       } else {
         selectHeader.classList.remove('header-scrolled')
         if (selectTopbar) {
           selectTopbar.classList.remove('topbar-scrolled')
+        } if (selectSandwich) {
+          selectSandwich.classList.remove('sandwich-scrolled')
         }
       }
     }
@@ -96,6 +101,7 @@
    * Back to top button
    */
   let backtotop = select('.back-to-top')
+  let scrolldown = select('.scroll-down')
   if (backtotop) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {
@@ -106,7 +112,20 @@
     }
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
+  } 
+  if (scrolldown) {
+    const toggleScrolldown = () => {
+      if (window.scrollY < 100) {
+        scrolldown.classList.add('active')
+      } else {
+        scrolldown.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleScrolldown)
+    onscroll(document, toggleScrolldown)
   }
+  
+
 
   /**
    * Mobile nav toggle

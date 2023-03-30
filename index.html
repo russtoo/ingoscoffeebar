@@ -28,6 +28,46 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+      #header {
+        top: 10px;
+        height: 70px;
+        z-index: 997;
+        transition: all 0.5s;
+        padding: 10px 0;
+        background: rgba(26, 24, 22, 0.85);
+      }
+
+      #header.header-transparent {
+        background: transparent;
+      }
+
+      #header.header-scrolled {
+        top: 0;
+        background: rgba(26, 24, 22, 0.85);
+      }
+
+      #header.header-transparent .logo img {
+        padding: 0;
+        margin: 0;
+        max-height: 51px;
+        transition: all 0.5s;
+      }
+      
+      #header.header-scrolled .logo img{
+        padding: 0;
+        margin: 0;
+        max-height: 41px;
+      }
+
+      #sandwich.sandwich-transparent {
+        opacity: 0;
+      }
+
+      #sandwich.sandwich-scrolled {
+        opacity: 1;
+      }
+    </style>
   </head>
 
   <body>
@@ -43,32 +83,44 @@
     </div>
 
     <!-- ======= Top Bar ======= -->
-    <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+    <!-- <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
       <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+<<<<<<< HEAD
         <i class="bi bi-arrow-up ms-4 d-flex align-items-center"><span>Swipe Up<a href="" style="color: white; text-decoration: underline;"></a></span></i>
       </div> <!--"bi bi-clock d-flex align-items-center"-->
     </section>
+=======
+        <i id="cookie-popup" class="bi bi-arrow-up ms-4 d-flex align-items-center" style="font-size: 13px;" ><span>Swipe Up<a href="" style="color: white; text-decoration: underline;"></a></span></i>
+      </div>  "bi bi-clock d-flex align-items-center"
+    </section> -->
+>>>>>>> loading
 
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center header-transparent">
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-        <div class="logo me-auto">
-          <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        
+        <div id="ingo" class="ingo-transparent">
+          <div class="logo me-auto">
+            <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+          </div>
         </div>
+        
 
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-            <li><a class="nav-link scrollto" href="#specials">Shelf</a></li>
-            <li><a class="nav-link scrollto" href="#events">Events</a></li>
-            <li><a class="nav-link scrollto" href="#chefs">Recipes</a></li>
-            <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+            <li><a class="nav-link scrollto" href="menu.html">Menu</a></li>
+            <li><a class="nav-link scrollto" href="shelf.html">Shelf</a></li>
+            <li><a class="nav-link scrollto" href="events.html">Events</a></li>
+            <li><a class="nav-link scrollto" href="recipes.html">Recipes</a></li>
+            <li><a class="nav-link scrollto" href="gallery.html">Gallery</a></li>
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
+          <div id="sandwich" class="sandwich-transparent">
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </div>
+          
         </nav><!-- .navbar -->
         <!--
         <a href="#book-a-table" class="book-a-table-btn scrollto"><i class="bi bi-cart-fill"> 0</i></a>
@@ -89,24 +141,26 @@
             <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg);">
               <div class="carousel-container">
                 <div class="carousel-content">
-                  <h2 class="animate__animated animate__fadeInDown">Updates</h2>
-                  <p class="animate__animated animate__fadeInUp">Loadshedding  <br>  </p>
+                  <p class="animate__animated animate__fadeInDown"><i><b>Welcome</b></i>, learn more about who we are and what we do,
+                    feel free to reach us and happy browsing.
+                  </p>
                   <div>
                     <a href="#about" class="btn-menu animate__animated animate__fadeInUp scrollto">About us</a>
                     <a href="#contact" class="btn-book animate__animated animate__fadeInUp scrollto">Contact</a>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> 
 
             <!-- Slide 2 -->
             <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
               <div class="carousel-container">
                 <div class="carousel-content">
-                  <h2 class="animate__animated animate__fadeInDown">Shelf Goods</h2>
-                  <p class="animate__animated animate__fadeInUp">GO dried FRUIT <br>Raw Honey <br>Indoor Plants <br>Darling Olives Products <br>Macadamia Oil & Butter</p>
+                  <p class="animate__animated animate__fadeInDown">Looking for a gift, a treat, 
+                    or a way to brighten up your home or office? Browse our shelf.
+                  </p>
                   <div>
-                    <a href="#specials" class="btn-menu animate__animated animate__fadeInUp scrollto">Shelf</a>
+                    <a href="shelf.html" class="btn-menu animate__animated animate__fadeInUp scrollto">Shelf</a>
                   </div>
                 </div>
               </div>
@@ -116,11 +170,9 @@
             <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg);">
               <div class="carousel-container">
                 <div class="carousel-content">
-                  <h2 class="animate__animated animate__fadeInDown">eg Our Menu</h2>
-                  <p class="animate__animated animate__fadeInUp">More Info needed here</p>
+                  <p class="animate__animated animate__fadeInDown">Host your private parties, meetings, workshops, or celebrations. View our options.</p>
                   <div>
-                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                    <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">ORDER</a>
+                    <a href="events.html" class="btn-menu animate__animated animate__fadeInUp scrollto">Events</a>
                   </div>
                 </div>
               </div>
@@ -143,30 +195,32 @@
     <main id="main">
 
       <!-- ======= About Section ======= -->
-      <section id="about" class="about">
+      <section id="about" class="about" style="padding-top: 60px;">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-5 d-flex flex-column justify-content-center align-items-stretch video-box">
-              <iframe src="https://www.youtube.com/embed/AMeQlgwiXSw?autoplay=1&origin=http://musatrd.github.io/icb/" height="360" allowfullscreen></iframe>
-            </div>
+            
             <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
-              <div class="content">
+              <div class="content" style="padding-bottom: 40px; text-align: center;">
                 <h3><strong> About</strong> Us</h3>
                 <p>
-                  Intro
+                  We are a family-owned business that honors the memory of our beloved father and grandfather, Ingo.
                 </p>
                 <p class="fst-italic">
-                  Started on the 
+                  We opened our doors in 2022, with the vision of creating a simple coffee bar that serves high-quality, wholesome and
+                  delicious food and drinks. We are passionate about using fresh ingredients from local farms and suppliers, such as stone
+                  ground flour, olive oil and marzipan. Whether you are looking for a hot or cold beverage, a pastry, a sandwich or a
+                  salad, we have something for you. You can also enjoy our free Wi-Fi and our cozy atmosphere, where you can relax and
+                  chat with friends or family. We also offer a variety of products for you to take home or gift to someone special.
+                  Our team is friendly, professional and eager to serve you. Come and visit us today and see why we are more than just a
+                  coffee bar. We are a community
                 </p>
-                <ul>
-                  <li><i class="bx bx-check-double"></i> Fairtrade Coffee</li>
-                  <li><i class="bx bx-check-double"></i> Homemade baked goods</li>
-                  <li><i class="bx bx-check-double"></i> Local Quality products</li>
-                </ul>
                 <p>
-                  We aim to
+                  With love, <i><b>Beatrix Pettit</b></i> and the Ingos Coffee Bar team
                 </p>
               </div>
+            </div>
+            <div class="col-lg-5 d-flex flex-column justify-content-center align-items-stretch video-box">
+              <img src="assets/img/staff.jpeg">
             </div>
           </div>
         </div>
@@ -177,8 +231,8 @@
         <div class="container">
 
           <div class="section-title">
-            <h2>Why <span>Ingos Coffee Bar</span></h2>
-            <p>Ingos was designed with a neat and minimal feel. We wanted this space to feel welcoming, not overwhelming.
+            <!-- <h2><span>Ingos Coffee Bar</span></h2> -->
+            <p>Our design is simple and elegant. We aimed for a cozy and inviting atmosphere.
             </p>
           </div>
 
@@ -195,7 +249,7 @@
             <div class="col-lg-4 mt-4 mt-lg-0 ">
               <div class="box">
                 <span>02</span>
-                <h4>Info</h4>
+                <h4>Cozy Atmosphere</h4>
                 <p> More Info...</p>
               </div>
             </div>
@@ -213,636 +267,6 @@
         </div>
       </section><!-- End Why Us Section -->
 
-      <!-- ======= Menu Section ======= -->
-      <section id="menu" class="menu">
-        <div class="container">
-
-          <div class="section-title">
-            <h2>Our <span>Menu</span></h2>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="menu-flters">
-                <li data-filter="*" class="filter-active">Show All</li>
-                <li data-filter=".filter-cold-beverage">Cold Drinks</li>
-                <li data-filter=".filter-hot-beverage">Hot Drinks</li>
-                <li data-filter=".filter-yummies">Yummies</li>
-                <li data-filter=".filter-bakery">Bakery</li>
-                <li data-filter=".filter-specialty">Specialty</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row menu-container">
-
-            <div class="col-lg-6 menu-item filter-hot-beverage">
-              <div class="menu-content">
-                <a href="#">Africano</a><span>R26</span>
-              </div>
-              <div class="menu-ingredients">
-                Hot water + Espresso
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-hot-beverage">
-              <div class="menu-content">
-                <a href="#">Cappuccino</a><span>R32</span>
-              </div>
-              <div class="menu-ingredients">
-                Espresso + Frothed milk
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-hot-beverage">
-              <div class="menu-content">
-                <a href="#">Large Cappuccino</a><span>R38</span>
-              </div>
-              <div class="menu-ingredients">
-                Double espresso + Frothed milk
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-hot-beverage">
-              <div class="menu-content">
-                <a href="#">Flat White</a><span>R35</span>
-              </div>
-              <div class="menu-ingredients">
-                Ristretto + Steamed milk
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-hot-beverage">
-              <div class="menu-content">
-                <a href="#">Cafe Latte</a><span>R40</span>
-              </div>
-              <div class="menu-ingredients">
-                Espresso + Frothed milk
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-cold-beverage">
-              <div class="menu-content">
-                <a href="#">Affogato</a><span>R40</span>
-              </div>
-              <div class="menu-ingredients">
-                Espresso + Ice cream scoops
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-cold-beverage">
-              <div class="menu-content">
-                <a href="#">Iced Coffee</a><span>R45</span>
-              </div>
-              <div class="menu-ingredients">
-                Double espresso + Ice + Milk (optional: Flavour Syrup, Honey)
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-hot-beverage">
-              <div class="menu-content">
-                <a href="#">Mocha</a><span>R45</span>
-              </div>
-              <div class="menu-ingredients">
-                Espresso + Dark chocolate + Frothed milk
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-hot-beverage">
-              <div class="menu-content">
-                <a href="#">Hot Chocolate</a><span>R38</span>
-              </div>
-              <div class="menu-ingredients">
-                Dark chocolate + Frothed milk
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-hot-beverage">
-              <div class="menu-content">
-                <a href="#">Chai Latte</a><span>R38</span>
-              </div>
-              <div class="menu-ingredients">
-                Chai + Frothed milk
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-hot-beverage">
-              <div class="menu-content">
-                <a href="#">Dirty Chai</a><span>R45</span>
-              </div>
-              <div class="menu-ingredients">
-                Espresso + Chai + Frothed milk
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-hot-beverage">
-              <div class="menu-content">
-                <a href="#">Red Cappuccino</a><span>R40</span>
-              </div>
-              <div class="menu-ingredients">
-                Rooibos + Frothed milk
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-hot-beverage">
-              <div class="menu-content">
-                <a href="#">Tea</a><span>R26</span>
-              </div>
-              <div class="menu-ingredients">
-                Rooibos / Mint / Chai / Black
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-cold-beverage">
-              <div class="menu-content">
-                <a href="#">Can Drink</a><span>R16</span>
-              </div>
-              <div class="menu-ingredients">
-                Coke / Lemonade 
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-cold-beverage">
-              <div class="menu-content">
-                <a href="#">Generosity Water</a><span>R16</span>
-              </div>
-              <div class="menu-ingredients">
-                Alkaline / Sparkling 
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-cold-beverage">
-              <div class="menu-content">
-                <a href="#">Appletiser</a><span>R19</span>
-              </div>
-              <div class="menu-ingredients">
-                / Grapetiser 
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-cold-beverage">
-              <div class="menu-content">
-                <a href="#">Orange Juice</a><span>R24</span>
-              </div>
-              <div class="menu-ingredients">
-                100% Cold-pressed Squeezed 
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-cold-beverage">
-              <div class="menu-content">
-                <a href="#">Red Juice</a><span>R34</span>
-              </div>
-              <div class="menu-ingredients">
-                100% Cold-pressed Squeezed: Beetroot, Orange
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-cold-beverage">
-              <div class="menu-content">
-                <a href="#">Green Juice</a><span>R34</span>
-              </div>
-              <div class="menu-ingredients">
-                100% Cold-pressed Squeezed: Apple, Celery 
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-cold-beverage">
-              <div class="menu-content">
-                <a href="#">Milkshake</a><span>R34</span>
-              </div>
-              <div class="menu-ingredients">
-                Berry / Coffee / Chocolate 
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-cold-beverage">
-              <div class="menu-content">
-                <a href="#">Berry Smoothie</a><span>R40</span>
-              </div>
-              <div class="menu-ingredients">
-                Berry, Banana, Yoghurt
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-cold-beverage">
-              <div class="menu-content">
-                <a href="#">Tangy Orange Smoothie</a><span>R43</span>
-              </div>
-              <div class="menu-ingredients">
-                Orange, Banana, Lemon, Honey, Yoghurt
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-cold-beverage">
-              <div class="menu-content">
-                <a href="#">Nutty Peanut Butter Smoothie</a><span>R56</span>
-              </div>
-              <div class="menu-ingredients">
-                Nutty Peanut Butter, Banana, Raw Cacao, Yoghurt
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-yummies">
-              <div class="menu-content">
-                <a href="#">Specialty Pie</a><span>R45</span>
-              </div>
-              <div class="menu-ingredients">
-                Stoneground flour, Organic ingredients
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-yummies">
-              <div class="menu-content">
-                <a href="#">Open Fresh Sandwich</a><span>R50</span>
-              </div>
-              <div class="menu-ingredients">
-                (Molasses Bread) Tomato, Mozzarrella, Pesto / Grilled Vegetables, Humus
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-specialty">
-              <div class="menu-content">
-                <a href="#">Marzipan Franzbotchen</a><span>R45</span>
-              </div>
-              <div class="menu-ingredients">
-                Butter pastry + Marzipan
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-bakery">
-              <div class="menu-content">
-                <a href="#">Croissant</a><span>R26-</span>
-              </div>
-              <div class="menu-ingredients">
-                Butter pastry
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-bakery">
-              <div class="menu-content">
-                <a href="#">Homemade Cake</a><span>R50-</span>
-              </div>
-              <div class="menu-ingredients">
-                Cheesecake / Carrot Cake
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-specialty">
-              <div class="menu-content">
-                <a href="#">Franzbotchen</a><span>R45</span>
-              </div>
-              <div class="menu-ingredients">
-                Butter pastry + Cinnamon + Sugar + Rooibos
-              </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-specialty">
-              <div class="menu-content">
-                <a href="#">Molasses Oat Bread</a><span>R45</span>
-              </div>
-              <div class="menu-ingredients">
-                Molasses, Oats, Sunflower seeds, Wheat flour
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </section><!-- End Menu Section -->
-
-      <!-- ======= Specials Section ======= -->
-      <section id="specials" class="specials">
-        <div class="container">
-
-          <div class="section-title">
-            <h2>Our <span>Shelf Goods</span></h2>
-            <p class="make-an-order">Make an <a href="#book-a-table">order</a>.</p>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-3">
-              <ul class="nav nav-tabs flex-column">
-                <li class="nav-item">
-                  <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Darling Olives</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Macadamia Oil & Butter</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Raw Honey</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#tab-4">GO dried FRUITS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Indoor Plants</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-9 mt-4 mt-lg-0">
-              <div class="tab-content">
-                <div class="tab-pane active show" id="tab-1">
-                  <div class="row">
-                    <div class="col-lg-8 details order-2 order-lg-1">
-                      <h3>All the way for Olive farms in western cape</h3>
-                      <p class="fst-italic">Darling olives are...</p>
-                      <p> more info..</p>
-                    </div>
-                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                      <img src="assets/img/specials-1.jpg" alt="" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="tab-2">
-                  <div class="row">
-                    <div class="col-lg-8 details order-2 order-lg-1">
-                      <h3>Macadamia oil...</h3>
-                      <p class="fst-italic">macadamia oil is...</p>
-                      <p>more info...</p>
-                    </div>
-                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                      <img src="assets/img/specials-2.jpg" alt="" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="tab-3">
-                  <div class="row">
-                    <div class="col-lg-8 details order-2 order-lg-1">
-                      <h3>info</h3>
-                      <p class="fst-italic">info2</p>
-                      <p>info3</p>
-                    </div>
-                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                      <img src="assets/img/specials-3.jpg" alt="" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="tab-4">
-                  <div class="row">
-                    <div class="col-lg-8 details order-2 order-lg-1">
-                      <h3>info</h3>
-                      <p class="fst-italic">info2</p>
-                      <p>info3</p>
-                    </div>
-                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                      <img src="assets/img/specials-4.jpg" alt="" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="tab-5">
-                  <div class="row">
-                    <div class="col-lg-8 details order-2 order-lg-1">
-                      <h3>info</h3>
-                      <p class="fst-italic">info2</p>
-                      <p>info3</p>
-                    </div>
-                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                      <img src="assets/img/specials-5.jpg" alt="" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section><!-- End Specials Section -->
-
-      <!-- ======= Events Section ======= -->
-      <section id="events" class="events">
-        <div class="container">
-
-          <div class="section-title">
-            <h2>Book an Event</h2>
-          </div>
-
-          <div class="events-slider swiper">
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                <div class="row event-item justify-content-center align-items-center">
-                  <div class="col-lg-6 pt-4 pt-lg-0 content">
-                    <h3>Birthday Parties</h3>
-                    <p class="fst-italic">
-                      info...
-                    </p>
-                    <ul>
-                      <li><i class="bi bi-check-circle"></i> benefit.</li>
-                      <li><i class="bi bi-check-circle"></i> benefit.</li>
-                      <li><i class="bi bi-check-circle"></i> benefit.</li>
-                    </ul>
-                    <p>
-                      more info
-                    </p>
-                  </div>
-                </div>
-              </div><!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="row event-item justify-content-center align-items-center">
-                  <div class="col-lg-6 pt-4 pt-lg-0 content">
-                    <h3>Private Parties</h3>
-                    <p class="fst-italic">
-                      info
-                    </p>
-                    <ul>
-                      <li><i class="bi bi-check-circle"></i>benefit.</li>
-                      <li><i class="bi bi-check-circle"></i> benefit.</li>
-                      <li><i class="bi bi-check-circle"></i> benefit.</li>
-                    </ul>
-                    <p>
-                      more info
-                    </p>
-                  </div>
-                </div>
-              </div><!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="row event-item justify-content-center align-items-center">
-                  <div class="col-lg-6 pt-4 pt-lg-0 content">
-                    <h3>Custom Parties</h3>
-                    <p class="fst-italic">
-                      info
-                    </p>
-                    <ul>
-                      <li><i class="bi bi-check-circle"></i> benefit.</li>
-                      <li><i class="bi bi-check-circle"></i> benefit.</li>
-                      <li><i class="bi bi-check-circle"></i> benefit.</li>
-                    </ul>
-                    <p>
-                      more info
-                    </p>
-                  </div>
-                </div>
-              </div><!-- End testimonial item -->
-
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-        </div>
-      </section><!-- End Events Section -->
-
-      <!-- ======= Book A Table Section ======= -->
-      <section id="book-a-table" class="book-a-table">
-        <div class="container">
-
-          <div class="section-title">
-            <h2>Make an<span> Order</span></h2>
-            <p></p>
-          </div>
-
-          <div class="php-email-form">
-            <div class="development-feature">
-              <div class="development-feature-spinner-container">
-                <div class="development-feature-spinner"></div>
-              </div>
-              <div class="development-feature-text">
-                <h1>Oops!</h1>
-                <p>This feature is currently under development.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section><!-- End Book A Table Section -->
-
-      <!-- ======= Gallery Section ======= -->
-      <section id="gallery" class="gallery">
-        <div class="container-fluid">
-
-          <div class="section-title">
-            <h2>Some photos of <span>Ingos Coffee Bar</span></h2>
-            <p> Subject to change</p>
-          </div>
-
-          <div class="row g-0">
-
-            <div class="col-lg-3 col-md-4">
-              <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </section><!-- End Gallery Section -->
-
-      <!-- ======= Chefs Section ======= -->
-      <section id="chefs" class="chefs">
-        <div class="container">
-
-          <div class="section-title">
-            <h2>Our <span>Recipes</span></h2>
-            <p></p>
-          </div>
-
-          <div class="row">
-
-            <div class="col-lg-4 col-md-6">
-              <div class="member">
-                <div class="pic"><img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt=""></div>
-                <div class="member-info">
-                  <h4>Molasses Oat Bread</h4>
-                  <span>Oats, Sunflower seeds, Molasses</span>
-                  <div class="social">
-                    <a class="coming-soon" style="color: cornflowerblue; font-size: small; cursor: pointer;" >Read recipe</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="member">
-                <div class="pic"><img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt=""></div>
-                <div class="member-info">
-                  <h4>Marzipan Blondie</h4>
-                  <span>Almond flour, Almond flakes, Marzipan, Chocolate, Butter </span>
-                  <div class="social">
-                    <a class="coming-soon" style="color: cornflowerblue; font-size: small; cursor: pointer;" >Read recipe</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="member">
-                <div class="pic"><img src="assets/img/chefs/chefs-3.jpeg" class="img-fluid" alt=""></div>
-                <div class="member-info">
-                  <h4>Coconut Crunch</h4>
-                  <span>Coconut, Marshmellow, Chocolate Drizzle</span>
-                  <div class="social">
-                    <a class="coming-soon" style="color: cornflowerblue; font-size: small; cursor: pointer;" >Read recipe</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </section><!-- End Chefs Section -->
 
       <!-- ======= Testimonials Section ======= -->
       <section id="testimonials" class="testimonials">
@@ -987,9 +411,9 @@
               </div>
 
               <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p><a href="tel:+27673402524">+27 67 340 2524</a></p>
+                <i class="bi bi-whatsapp"></i>
+                <h4>Text:</h4>
+                <p><a href="https://wa.me/27673402524">+27 67 340 2524</a></p>
               </div>
             </div>
           </div>
@@ -1005,7 +429,7 @@
     <footer id="footer">
       <div class="container">
         <div class="footer-img">
-          <img src="assets/img/apple-touch-icon.png">
+          <img src="assets/img/apple-touch-icon.png" width="100" height="100">
         </div>
         <p>Fairtrade Coffee | Pies & Pastries | Plants | Pre-loved Books</p>
         <div class="social-links">
@@ -1024,6 +448,7 @@
     </footer><!-- End Footer -->
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#about" class="scroll-down d-flex align-items-center justify-content-center">scroll down<i class="bi bi-arrow-down-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1037,19 +462,6 @@
         const loader = document.querySelector('.loader');
         loader.remove();
       });
-    </script>
-
-    <script>
-      // Get all the HTML elements with the class name "coming-soon"
-      const comingSoonElements = document.getElementsByClassName("coming-soon");
-
-      // Add a click event listener to all the elements with the class name "coming-soon"
-      for (let i = 0; i < comingSoonElements.length; i++) {
-        comingSoonElements[i].addEventListener("click", function() {
-          // Change the text of the clicked element to "Coming soon"
-          this.innerText = "Coming soon";
-        });
-      }
     </script>
 
     <!-- Main JS File -->
