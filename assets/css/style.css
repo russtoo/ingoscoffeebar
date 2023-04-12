@@ -138,18 +138,21 @@ h6 {
   line-height: 1;
   font-weight: 400;
   letter-spacing: 3px;
+  z-index: 997;
 }
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
   color: #fff;
   text-decoration: none;
+  z-index: 997;
 }
 
 #header .logo img {
   padding: 0;
   margin: 0;
   max-height: 41px;
+  z-index: 997;
 }
 /*--------------------------------------------------------------
 # Book a table button Menu
@@ -1756,59 +1759,28 @@ section {
 --------------------------------------------------------------*/
 
 .loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   background-color: #35322d;
-  z-index: 998;
+  z-index: 999;
+  position: relative;
 }
 
-.loader-bar {
-  width: 5px;
-  height: 30px;
-  margin: 0 10px;
-  background-color: white;
-  animation: loader 1s ease-in-out infinite;
+.loader-logo {
+  opacity: 0;
+  animation: fade-in-out 2s ease-in-out infinite;
 }
 
-.loader-bar:nth-child(1) {
-  animation-delay: 0s;
-}
+@keyframes fade-in-out {
 
-.loader-bar:nth-child(2) {
-  animation-delay: 0.1s;
-}
-
-.loader-bar:nth-child(3) {
-  animation-delay: 0.2s;
-}
-
-.loader-bar:nth-child(4) {
-  animation-delay: 0.3s;
-}
-
-.loader-bar:nth-child(5) {
-  animation-delay: 0.4s;
-}
-
-.loader-bar:nth-child(6) {
-  animation-delay: 0.5s;
-}
-
-@keyframes loader {
-  0% {
-    transform: scale(1);
+  0%,
+  100% {
+    opacity: 0;
   }
-  20% {
-    transform: scale(1, 2.5);
-  }
-  40% {
-    transform: scale(1);
+
+  50% {
+    opacity: 1;
   }
 }
-
