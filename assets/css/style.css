@@ -4,6 +4,7 @@
 body {
   font-family: "Roboto", serif;
   color: #444444;
+  overflow: hidden;
 }
 
 a {
