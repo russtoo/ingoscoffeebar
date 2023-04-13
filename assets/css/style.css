@@ -1773,6 +1773,17 @@ section {
   animation: fade-in-out 2s ease-in-out infinite;
 }
 
+.loader img {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+  width: 100px;
+  height: auto;
+}
+
 @keyframes fade-in-out {
 
   0%,
