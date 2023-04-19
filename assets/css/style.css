@@ -1,6 +1,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: dealers;
+  src: url(/icb/assets/fonts/Dealers\ -\ Solid.otf) format("opentype");
+}
+
 body {
   font-family: "Roboto", serif;
   color: #444444;
@@ -23,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Bitter", sans-serif;
+  font-family: dealers;
 }
 
 /*--------------------------------------------------------------
