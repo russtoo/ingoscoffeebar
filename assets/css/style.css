@@ -2,8 +2,8 @@
 # General
 --------------------------------------------------------------*/
 @font-face {
-  font-family: dealers;
-  src: url(/icb/assets/fonts/Dealers\ -\ Solid.otf) format("opentype");
+  font-family: "dealers";
+  src: local("dealers"), url(/icb/assets/fonts/Dealers\ -\ Solid.otf) format("opentype");
 }
 
 body {
@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: dealers;
+  font-family: "dealers";
 }
 
 /*--------------------------------------------------------------
