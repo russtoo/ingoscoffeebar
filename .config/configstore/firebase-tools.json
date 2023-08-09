@@ -1,0 +1,39 @@
+{
+	"motd": {
+		"cloudBuildErrorAfter": 1594252800000,
+		"cloudBuildWarnAfter": 1590019200000,
+		"defaultNode10After": 1594252800000,
+		"minVersion": "3.0.5",
+		"node8DeploysDisabledAfter": 1613390400000,
+		"node8RuntimeDisabledAfter": 1615809600000,
+		"node8WarnAfter": 1600128000000,
+		"fetched": 1690110675393
+	},
+	"usage": true,
+	"analytics-uuid": "d041d814-fbc7-4d15-b732-2237bb32c5c1",
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "105639983892904860242",
+		"hd": "ingoscoffeebar.com",
+		"email": "ingo@ingoscoffeebar.com",
+		"email_verified": true,
+		"at_hash": "v9bR9nzbaofuCyicHlPNWA",
+		"iat": 1690110980,
+		"exp": 1690114580
+	},
+	"tokens": {
+		"expires_at": 1690114578067,
+		"access_token": "ya29.a0AbVbY6PSshZVI_OFXrvJEemz0S3P-v0Ai4hHSEhj8XPczUEwv8KSZ938xPD3EZuXPOu57PhAye0a66BRXcWbfD2eXzr4kHA9Db0U0vvXgkGU-PtsqwteEOdN6yQ685BwzUelTtbwbrgj6TCrU3FHCfavzNCHZHRkkjg3aCgYKAe4SARISFQFWKvPla0q0ky04OuHc59GrLWSiGQ0171",
+		"expires_in": 3599,
+		"refresh_token": "1//03b8hx4byud37CgYIARAAGAMSNwF-L9IrLb7xq5Y5OQtCzahkx1hQ6Zot6Kvnr-h1THPI4gAY--SmzM8D-9LeaELnbqv5mKpXcvw",
+		"scope": "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid https://www.googleapis.com/auth/cloud-platform",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImEzYmRiZmRlZGUzYmFiYjI2NTFhZmNhMjY3OGRkZThjMGIzNWRmNzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA1NjM5OTgzODkyOTA0ODYwMjQyIiwiaGQiOiJpbmdvc2NvZmZlZWJhci5jb20iLCJlbWFpbCI6ImluZ29AaW5nb3Njb2ZmZWViYXIuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJ2OWJSOW56YmFvZnVDeWljSGxQTldBIiwiaWF0IjoxNjkwMTEwOTgwLCJleHAiOjE2OTAxMTQ1ODB9.ZUSVJIVRuOwVNbd1bkV4GEX9Og_dkIgEDKuGIesh7d2gZp1imNkxX0-Vi9YKVtvL8p-FfCIGmlgJoewyraChCWQDItO4tTwYxFxN65xf0gCm2tZbOya5FMOZ0Io4lJNUvy6xCVVJm41VEZPpzTeymV8MmearkewhktTqPwXc8ZnzXgn4QsOJaYLSu7ddWtd6KFRodZ-9HahhmY-b1X2wqdxzu2vWEi_5V8_L8nIU4InsVJF2JVIEQ9QhOv5rUKx9zAzqxiTC4eWvpCQuI95N99s_FxOnlICn5lM9Fia2YLquxr5uRUXo0_znRnGIeFiOSRw71yqmF9xUsifHxdsXtg"
+	},
+	"activeProjects": {
+		"C:\\Users\\musar": "ingos-coffee-bar"
+	},
+	"lastError": 1690111394555
+}

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Ingos Coffee Bar</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+      #header {
+        top: 10px;
+        height: 70px;
+        z-index: 997;
+        transition: all 0.5s;
+        padding: 10px 0;
+        background: rgba(26, 24, 22, 0.85);
+      }
+
+      #header.header-transparent {
+        background: transparent;
+      }
+
+      #header.header-scrolled {
+        top: 0;
+        background: rgba(26, 24, 22, 0.85);
+      }
+
+      #header.header-transparent .logo img {
+        padding: 0;
+        margin: 0;
+        max-height: 51px;
+        transition: all 0.5s;
+      }
+      
+      #header.header-scrolled .logo img{
+        padding: 0;
+        margin: 0;
+        max-height: 41px;
+      }
+
+      #sandwich.sandwich-transparent {
+        opacity: 0;
+      }
+
+      #sandwich.sandwich-scrolled {
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- ======= loader ======= -->
+    <div class="loader">
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+    </div>
+
+    <!-- ======= Top Bar ======= -->
+    <!-- <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+<<<<<<< HEAD
+        <i class="bi bi-arrow-up ms-4 d-flex align-items-center"><span>Swipe Up<a href="" style="color: white; text-decoration: underline;"></a></span></i>
+      </div> <!--"bi bi-clock d-flex align-items-center"-->
+    </section>
+=======
+        <i id="cookie-popup" class="bi bi-arrow-up ms-4 d-flex align-items-center" style="font-size: 13px;" ><span>Swipe Up<a href="" style="color: white; text-decoration: underline;"></a></span></i>
+      </div>  "bi bi-clock d-flex align-items-center"
+    </section> -->
+>>>>>>> loading
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        
+        <div id="ingo" class="ingo-transparent">
+          <div class="logo me-auto">
+            <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+          </div>
+        </div>
+        
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="menu.html">Menu</a></li>
+            <li><a class="nav-link scrollto" href="shelf.html">Shelf</a></li>
+            <li><a class="nav-link scrollto" href="events.html">Events</a></li>
+            <li><a class="nav-link scrollto" href="recipes.html">Recipes</a></li>
+            <li><a class="nav-link scrollto" href="gallery.html">Gallery</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <div id="sandwich" class="sandwich-transparent">
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </div>
+          
+        </nav><!-- .navbar -->
+        <!--
+        <a href="#book-a-table" class="book-a-table-btn scrollto"><i class="bi bi-cart-fill"> 0</i></a>
+          -->
+      </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="hero-container">
+        <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+          <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+          <div class="carousel-inner" role="listbox">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg);">
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <p class="animate__animated animate__fadeInDown"><i><b>Welcome</b></i>, learn more about who we are and what we do,
+                    feel free to reach us and happy browsing.
+                  </p>
+                  <div>
+                    <a href="#about" class="btn-menu animate__animated animate__fadeInUp scrollto">About us</a>
+                    <a href="#contact" class="btn-book animate__animated animate__fadeInUp scrollto">Contact</a>
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <p class="animate__animated animate__fadeInDown">Looking for a gift, a treat, 
+                    or a way to brighten up your home or office? Browse our shelf.
+                  </p>
+                  <div>
+                    <a href="shelf.html" class="btn-menu animate__animated animate__fadeInUp scrollto">Shelf</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg);">
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <p class="animate__animated animate__fadeInDown">Host your private parties, meetings, workshops, or celebrations. View our options.</p>
+                  <div>
+                    <a href="events.html" class="btn-menu animate__animated animate__fadeInUp scrollto">Events</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+          </a>
+
+          <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+          </a>
+
+        </div>
+      </div>
+    </section><!-- End Hero -->
+
+    <main id="main">
+
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about" style="padding-top: 60px;">
+        <div class="container-fluid">
+          <div class="row">
+            
+            <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+              <div class="content" style="padding-bottom: 40px; text-align: center;">
+                <h3><strong> About</strong> Us</h3>
+                <p>
+                  We are a family-owned business that honors the memory of our beloved father and grandfather, Ingo.
+                </p>
+                <p class="fst-italic">
+                  We opened our doors in 2022, with the vision of creating a simple coffee bar that serves high-quality, wholesome and
+                  delicious food and drinks. We are passionate about using fresh ingredients from local farms and suppliers, such as stone
+                  ground flour, olive oil and marzipan. Whether you are looking for a hot or cold beverage, a pastry, a sandwich or a
+                  salad, we have something for you. You can also enjoy our free Wi-Fi and our cozy atmosphere, where you can relax and
+                  chat with friends or family. We also offer a variety of products for you to take home or gift to someone special.
+                  Our team is friendly, professional and eager to serve you. Come and visit us today and see why we are more than just a
+                  coffee bar. We are a community
+                </p>
+                <p>
+                  With love, <i><b>Beatrix Pettit</b></i> and the Ingos Coffee Bar team
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 d-flex flex-column justify-content-center align-items-stretch video-box">
+              <img src="assets/img/staff.jpeg">
+            </div>
+          </div>
+        </div>
+      </section> <!-- End About Section -->
+      
+      <!-- ======= Why Us Section ======= -->
+      <section id="why-us" class="why-us">
+        <div class="container">
+
+          <div class="section-title">
+            <!-- <h2><span>Ingos Coffee Bar</span></h2> -->
+            <p>Our design is simple and elegant. We aimed for a cozy and inviting atmosphere.
+            </p>
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-4">
+              <div class="box">
+                <span>01</span>
+                <h4>Fairtrade Coffee</h4>
+                <p>Prioritise quality taste...</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0 ">
+              <div class="box">
+                <span>02</span>
+                <h4>Cozy Atmosphere</h4>
+                <p> More Info...</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box">
+                <span>03</span>
+                <h4>Info</h4>
+                <p>More Info...</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section><!-- End Why Us Section -->
+
+
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials">
+        <div class="container position-relative">
+
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3><a href="https://www.instagram.com/p/CfW1luXqgnL/" style="color: rgb(255, 255, 255);">
+                    <span style="font-size: medium;">@</span>jozicoffeespots
+                  </a></h3>
+                  <h4><a href="https://www.instagram.com/p/CfW1luXqgnL/" style="color: rgb(255, 255, 255);">Instagram Blog</a></h4>
+                  <div class="social">
+                    <a href="https://www.instagram.com/p/CfW1luXqgnL/"><i class="bi bi-instagram" style="color: gray;"></i></a>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    <a href="https://www.instagram.com/p/CfW1luXqgnL/" style="color: rgb(255, 255, 255);">
+                      cosy coffee spot in Windsor Glen, Randburg, with great coffee, preloved books for sale, and a variety of delicious pastries and light meals on offer. Ingo’s coffee bar is family run, and they stock a variety of local goodies that are perfect as gifts. Ingo’s also has WiFi and delicious cake if you’re looking to escape the office for a work date. We love supporting small businesses & Ingos Coffee Bar is definitely worth a visit.
+                    </a>
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3><a href="https://www.instagram.com/p/ChC7RSMDeUS/" style="color: white;">
+                    <span style="font-size: medium;">@</span>hiddenjoburg
+                  </a></h3>
+                  <h4><a href="https://www.instagram.com/p/ChC7RSMDeUS/" style="color: white;"> Instagram Blog</a></h4>
+                  <div class="social">
+                    <a href="https://www.instagram.com/p/ChC7RSMDeUS/"><i class="bi bi-instagram" style="color: gray;"></i></a>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    <a href="https://www.instagram.com/p/ChC7RSMDeUS/" style="color: white;">
+                      Ingos Coffee Bar in Windsor Glen is welcoming, warm and cosy with incredible coffee and delicious homemade pies and pastries. They have Wifi for those looking for a quiet and peaceful spot to work or if you just want to make use of their pre-loved books library and enjoy a coffee, what a delightful way to spend your morning?! 
+                    </a>
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3><a href="https://randburgsun.co.za/450966/ingos-coffee-bar-the-new-instagrammable-cafe-in-windsor-glen/" style="color: white;">Randburg Sun</a></h3>
+                  <h4><a href="https://randburgsun.co.za/450966/ingos-coffee-bar-the-new-instagrammable-cafe-in-windsor-glen/" style="color: white;">Local Newspaper</a></h4>
+                  <div class="social">
+                    <a href="https://randburgsun.co.za/450966/ingos-coffee-bar-the-new-instagrammable-cafe-in-windsor-glen/"><i class="bi bi-newspaper" style="color: gray;"></i></a>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    <a href="https://randburgsun.co.za/450966/ingos-coffee-bar-the-new-instagrammable-cafe-in-windsor-glen/" style="color: white;">
+                      ...it offers a modern and relaxed environment where one could work or study as well as tasty, affordable coffee, freshly baked croissants, cheesecake and one-of-a-kind delicious Franzbrötchen pastry from Hamburg, Germany.
+                    </a>
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3><a href="https://www.instagram.com/p/Cfmcc3rLvMK/" style="color: white;"><span style="font-size: medium;">@</span>olafschaum</a></h3>
+                  <h4><a href="https://www.instagram.com/p/Cfmcc3rLvMK/" style="color: white;">Photographer</a></h4>
+                  <div class="social">
+                    <a href="https://www.instagram.com/p/Cfmcc3rLvMK/"><i class="bi bi-instagram" style="color: gray;"></i></a>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    <a href="https://www.instagram.com/p/Cfmcc3rLvMK/" style="color: white;">
+                      Ask for a traditional "Franzbrötchen" to go with your delicious cuppa fair-trade coffee.<br>And yes, they speak German too. Sehr gut 👌🏽🇩🇪
+                    </a>
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3><a href="https://g.co/kgs/anSD59" style="color: white;">Natalie Delport Louw</a></h3>
+                  <h4><a href="https://g.co/kgs/anSD59" style="color: white;">Local Guide</a></h4>
+                  <div class="social">
+                    <a href="https://g.co/kgs/anSD59"><i class="bi bi-google" style="color: gray;"></i></a>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    <a href="https://g.co/kgs/anSD59" style="color: white;">
+                      A cozy little coffee shop in the Windsor Glen shopping centre off Republic Road. They make the most divine croissants: plain, cheese & chocolate (cudos to an awesome Russel!). Great coffees too. The staff are friendly and super helpful. Have yet to go back to try their popular cheesecake 😋
+                    </a>
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </section><!-- End Testimonials Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+
+          <div class="section-title">
+            <h2><span>Contact</span> Us</h2>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="container mt-5">
+
+          <div class="info-wrap">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 info">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p><a href="https://www.google.com/maps/place/Ingos+Coffee+Bar/@-26.1164748,27.9701009,17z/data=!3m1!4b1!4m6!3m5!1s0x1e95755c7d991cb1:0xacac71156ff97b8c!8m2!3d-26.1164796!4d27.9722896!16s%2Fg%2F11sqt63116">250 Republic Road<br>Windsor Glen, Randburg, Jhb<br> 2194</a></p>
+              </div>
+
+              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>Monday-Thursday:<br>8:00 AM - 5:00 PM</p>
+                <p>Friday-Saturday:<br>8:00 AM - 6:00 PM</p>
+              </div>
+
+              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p><a href="mailto:ingo@ingoscoffeebar.com">ingo@ingoscoffeebar.com</a></p>
+              </div>
+
+              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                <i class="bi bi-whatsapp"></i>
+                <h4>Text:</h4>
+                <p><a href="https://wa.me/27673402524">+27 67 340 2524</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Section Form paste here -->
+
+        </div>
+      </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-img">
+          <img src="assets/img/apple-touch-icon.png" width="100" height="100">
+        </div>
+        <p>Fairtrade Coffee | Pies & Pastries | Plants | Pre-loved Books</p>
+        <div class="social-links">
+          <a href="https://twitter.com/ingoscoffeebar" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://facebook.com/ingoscoffeebar" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://instagram.com/ingoscoffeebar" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://youtube.com/ingoscoffeebar" class="youtube"><i class="bx bxl-youtube"></i></a>
+        </div>
+        <div class="copyright">
+          &copy; 2023 <strong><span>Ingos Coffee Bar</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Developed by <a href="https://github.com/musatrd">musa</a>
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#about" class="scroll-down d-flex align-items-center justify-content-center">scroll down<i class="bi bi-arrow-down-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    
+    <script>
+      window.addEventListener('load', function() {
+        const loader = document.querySelector('.loader');
+        loader.remove();
+      });
+    </script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+  </body>
+
+</html>
