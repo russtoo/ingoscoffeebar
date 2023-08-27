@@ -131,7 +131,7 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   top: 0;
-  height: 70px;
+  height: 60px;
   z-index: 997;
   transition: all 0.5s;
   padding: 10px 0;
@@ -157,7 +157,7 @@ h6 {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 34px;
+  max-height: 32px;
   z-index: 997;
 }
 /*--------------------------------------------------------------
@@ -1000,10 +1000,12 @@ section {
 .menu .menu-container div {
   display: flex;
   justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 .img-fluid {
-  max-height: 800px;
+  max-height: 1300px;
 }
 /*--------------------------------------------------------------
 # Specials
