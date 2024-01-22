@@ -10,6 +10,7 @@ body {
   font-family: "Roboto", serif;
   color: #444444;
   overflow: hidden;
+  font-siz
 }
 
 a {
@@ -894,6 +895,32 @@ section {
   text-align: center;
   flex-direction: row;
 }
+
+.contain {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+.about-card > div, .events-card > div, .updates-card > div {
+  margin: 2em;
+  text-align: center;
+}
+.events-card {
+  background: url("../img/bg-events.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.updates-card {
+  grid-area: u;
+  border: 1.8px solid #000000;
+  border-radius: 3em;
+  margin: 2em;
+}
+
 
 @media (min-width: 900px) {
  
